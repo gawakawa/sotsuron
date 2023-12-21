@@ -1,0 +1,68 @@
+\documentclass[uplatex]{suribt}
+%\documentclass[oneside]{suribt}% 本文が * ページ以下のときに (掲示に注意)
+\title{タイトル}
+%\titlewidth{}% タイトル幅 (指定するときは単位つきで)
+\author{長谷川 慧}
+\eauthor{Hiraku Hasegawa}% Copyright 表示で使われる
+\studentid{08-222021}
+\supervisor{森畑明昌 准教授}% 1 つ引数をとる (役職まで含めて書く)
+%\supervisor{指導教員名 役職 \and 指導教員名 役職}% 複数教員の場合，\and でつなげる
+\handin{2024}{01}% 提出月. 2 つ (年, 月) 引数をとる
+%\keywords{キーワード1, キーワード2} % 概要の下に表示される
+
+\begin{document}
+\maketitle%%%%%%%%%%%%%%%%%%% タイトル %%%%
+
+\frontmatter% ここから前文
+\begin{abstract}%%%%%%%%%%%%% 概要 %%%%%%%%
+ ここに概要を書く．
+\end{abstract}
+
+\tableofcontents%%%%%%%%%%%%% 目次 %%%%%%%%
+
+\mainmatter% ここから本文 %%% 本文 %%%%%%%%
+\chapter{はじめに}
+\section{背景}
+検証のこと
+関係的検証とは
+・普通の検証との共通点と相違点
+海野ら 必要最小限のことを書く
+
+\section{研究の目的}
+pcsatの調査不足 
+  benchmark少ない
+  しかもprimitive
+non-trivialな例はない(e.g. arrayInsert)
+pcsatの複雑性によってスケーラビリティに想像つかない
+
+実際問題使えるの？
+
+使えないならヒントが必要なのでは？
+・benchmarkの追試 solverのupdateが原因なんじゃないか(想像)
+・自作問題(3つ) ヒント
+・array read-only
+\section{本論文の構成}
+\section{}
+\chapter{先行研究} % ここがデカくなりそう
+\section{Unnoら}
+\section{Relasionak verifiation}
+
+\chapter{方法} % まとめる
+\chapter{実験}
+\section{結果}
+\section{考察}
+
+\chapter{おわりに}
+% \chapter{関連研究}
+
+\backmatter% ここから後付
+
+\begin{thebibliography}{}%%%% 参考文献 %%%
+ \bibitem{}
+\end{thebibliography}
+%\bibliographystyle{}%           BibTeX を使う場合
+%\bibliography{.bib ファイル名}% BibTeX を使う場合
+
+\appendix% ここから付録 %%%%% 付録 %%%%%%%
+\chapter{}
+\end{document}
